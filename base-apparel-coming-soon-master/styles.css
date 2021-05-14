@@ -1,3 +1,189 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-.attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
+body{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 14px;
+    line-height: 1.7;
+    position: relative;
+}
+/* Header Section */
+nav{
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+.nav__logo{
+    width: 100%;
+    background: rgb(255, 255, 255);
+    height: 6rem;
+    /* position: relative; */
+}
+.nav__logo img{
+    height: 2rem;
+    /* position: absolute; */
+    margin-top: 2rem;
+    margin-left:2rem;
+}
+.header__img{
+    /* position: absolute; */
+    top: 6rem;
+    width: 100%;
+    height: 80vw;
+    max-height: 600px;
+    background: url("../base-apparel-coming-soon-master/images/hero-mobile.jpg");
+    background-size: cover;
+    background-position:bottom;
+
+}
+.clearfix{zoom: 1;}
+.clearfix::after{
+    content: '.';
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+/* Header Content */
+.header--main--contents{
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+}
+.header__content{
+    /* position: absolute; */
+    /* display: flex; */
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    width: 80vw;
+    max-width: 600px;
+    /* left: 50%;
+    transform: translateX(-50%);
+    max-width: 500px; */
+}
+
+.header__content h1{
+    text-transform:uppercase;
+    text-align: center;
+    letter-spacing:.8rem;
+}
+.text-primary{
+    display: block;
+    font-size: 3rem; 
+    font-weight: 300;
+    color:hsl(0, 36%, 70%); 
+    line-height: 1.1;
+}
+.text-secondary{
+    display: block;
+    font-size: 3rem;
+    font-weight: 600;
+    line-height: 1.1;
+    color: hsl(0, 6%, 24%);
+}
+
+.header__content p{
+    text-align: center;
+    color: hsl(0, 36%, 70%);
+    margin-bottom: 1rem;
+}
+
+/* header--input Section */
+.error-msg{
+    display: none;
+}
+.header__content--input{
+    position: relative;
+}
+.header__content--input input{
+    height: 3rem;
+    width: 100%;
+    font-family: 'Josefin Sans', sans-serif;
+    border: 1px solid hsl(0, 36%, 70%);
+    padding: 1rem;
+    color: hsl(0, 93%, 68%);
+    border-radius: 2rem;
+    outline: none;
+}
+.header__content--input input:focus{
+    border: 1px solid hsl(0, 93%, 68%);
+}
+.header__content--input input::placeholder{
+    color: hsl(0,36%,70%);
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: .9rem;
+    font-weight: 400;
+    letter-spacing: 0.05rem;
+    line-height: 1.7;
+}
+
+.button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+    width: 5rem;
+    height: 3rem;
+    border-radius: 2rem;
+    z-index: 1;
+    position: absolute;
+    right: -1rem;
+    top: 0;
+}
+.button a img{
+    margin: 0%;
+    padding: 0;
+}
+footer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+
+/* -----responsive------- */
+@media only screen and (min-width:450px){
+    body{
+        font-size:16px;
+    }
+}
+@media only screen and (min-width:500px){
+    body{
+        font-size: 20px;
+    }
+    .header__img{
+        background: url("../base-apparel-coming-soon-master/images/hero-desktop.jpg");
+        background-size: cover;
+    }
+}
+@media only screen and (min-width:700px){
+    .header__content h1{
+        margin-bottom: 1rem;
+    }
+    .sub-header p{
+        margin-bottom: 1rem;
+    }
+}
+/* - Mobile: 375px
+- Desktop: 1440px */
+
+/* 
+## Colors
+
+### Primary
+
+- Desaturated Red: hsl(0, 36%, 70%)
+- Soft Red: hsl(0, 93%, 68%)
+
+### Neutral
+
+- Dark Grayish Red: hsl(0, 6%, 24%)
+
+### Gradients
+
+- Linear, 135deg, from hsl(0, 0%, 100%), to hsl(0, 100%, 98%)
+- Linear, 135deg, from hsl(0, 80%, 86%), to hsl(0, 74%, 74%)
+ */
