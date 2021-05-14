@@ -1,5 +1,7 @@
 # Frontend Mentor - Base Apparel coming soon page
 
+https://s2-sengar.github.io/frontEndMentor/base-apparel-coming-soon-master/
+
 ![Design preview for the Base Apparel coming soon page coding challenge](./design/desktop-preview.jpg)
 
 ## Welcome! 👋
