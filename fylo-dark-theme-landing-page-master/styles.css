@@ -30,6 +30,7 @@ a{
 }
 header{
     padding: 2rem 2rem 5rem 2rem;
+    position: relative;
 }
 section{
     padding: 5rem 2rem 5rem 2rem;
@@ -64,7 +65,7 @@ footer{
     width: 10rem;
 }
 header{
-    /* background: url(/fylo-dark-theme-landing-page-master/images/bg-curvy-mobile.svg); */
+    background: url(../fylo-dark-theme-landing-page-master/images/bg-curvy-mobile.svg);
     background-size:contain;
     background-color: hsl(217, 28%, 15%);
     background-repeat: no-repeat;
@@ -103,6 +104,12 @@ header{
     background:linear-gradient(hsl(176, 68%, 64%),hsl(198, 60%, 50%));
     padding: 1rem 5rem 1rem 5rem;
     border-radius: 10rem;
+}
+.head-curve{
+    position: absolute;
+    width: 100vh;
+    z-index: -111;
+    bottom: 0;
 }
 /* .head-curve{
     position: absolute;
